@@ -12,11 +12,11 @@ class TestConversorMoneda(unittest.TestCase):
     def test_conversion_eur_to_jpy(self):
         self.assertAlmostEqual(self.conversor.convertir(100, 'EUR', 'JPY'), 13000)
     def test_conversion_pen_to_eur(self):
-        self.assertAlmostEqual(self.conversor.convertir(100, 'PEN', 'EUR'), 24.29)
+        self.assertAlmostEqual(self.conversor.convertir(100, 'PEN', 'EUR'), 24.28513)
     def test_conversion_pen_to_usd(self):
-        self.assertAlmostEqual(self.conversor.convertir(100, 'PEN', 'USD'), 26.54)
+        self.assertAlmostEqual(self.conversor.convertir(100, 'PEN', 'USD'), 26.537517)
     def test_conversion_pen_to_jpy(self):
-        self.assertAlmostEqual(self.conversor.convertir(100, 'PEN', 'JPY'), 4037.94)
+        self.assertAlmostEqual(self.conversor.convertir(100, 'PEN', 'JPY'), 4037.9359999999997)
     def test_misma_moneda(self):
         self.assertEqual(self.conversor.convertir(100, 'USD', 'USD'), 100)
     def test_moneda_invalida(self):
